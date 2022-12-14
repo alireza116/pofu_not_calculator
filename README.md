@@ -1,3 +1,9 @@
+To build,
+
+npm install
+
+cd client && npm install
+
 To start use
 
 npm run dev
