@@ -1,7 +1,8 @@
-import { useEffect, useState } from "react";
-import axios from "axios";
-import IconArray from "./components/IconArray";
-import "./App.css";
+import { useEffect, useState } from 'react';
+import axios from 'axios';
+import IconArray from './components/IconArray';
+import './App.css';
+import FlightCo2e from './components/flightco2e';
 
 function App() {
   const getData = async () => {
@@ -18,13 +19,14 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      <header className="text-3xl font-bold underline">
+    <div className='App'>
+      <header className='text-3xl font-bold underline'>
         <p>IDEO website for Label Maker</p>
       </header>
       <hr></hr>
+      <FlightCo2e />
       <input
-        type="range"
+        type='range'
         min={5}
         max={20}
         onChange={(event) => {
@@ -32,7 +34,7 @@ function App() {
         }}
       />
       <input
-        type="range"
+        type='range'
         min={5}
         max={20}
         onChange={(event) => {
@@ -40,7 +42,7 @@ function App() {
         }}
       />
       <input
-        type="range"
+        type='range'
         min={0}
         max={100}
         onChange={(event) => {
@@ -48,7 +50,7 @@ function App() {
         }}
       />
       <div>{numCols * numRows}</div>
-      <div className="mt-20" style={{ width: "600px", height: "600px" }}>
+      <div className='mt-20' style={{ width: '600px', height: '600px' }}>
         <IconArray numCols={numCols} numRows={numRows} pct={pct}></IconArray>
       </div>
     </div>
