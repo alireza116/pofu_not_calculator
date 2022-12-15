@@ -11,6 +11,7 @@ function App() {
 
   const [numCols, setNumCols] = useState(10);
   const [numRows, setNumRows] = useState(10);
+  const [pct, setPct] = useState(50);
 
   useEffect(() => {
     getData();
@@ -38,9 +39,17 @@ function App() {
           setNumRows(parseInt(event.target.value));
         }}
       />
+      <input
+        type="range"
+        min={0}
+        max={100}
+        onChange={(event) => {
+          setPct(parseInt(event.target.value));
+        }}
+      />
       <div>{numCols * numRows}</div>
       <div className="mt-20" style={{ width: "600px", height: "600px" }}>
-        <IconArray numCols={numCols} numRows={numRows}></IconArray>
+        <IconArray numCols={numCols} numRows={numRows} pct={pct}></IconArray>
       </div>
     </div>
   );

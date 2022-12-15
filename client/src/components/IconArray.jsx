@@ -7,15 +7,15 @@ const IconArray = (props) => {
   const numRows = props.numRows || 10;
 
   const data = d3.range(numCols * numRows);
-  console.log(data);
+  let highlight = Math.floor((props.pct / 100) * data.length);
+  console.log(highlight);
 
   const width = props.width || "100%";
   const height = props.height || "100%";
 
   useEffect(() => {
-    const svg = d3
-      .select(svgContainer.current)
-      .style("background-color", "lightgrey");
+    const svg = d3.select(svgContainer.current);
+    //   .style("background-color", "lightgrey");
     svg.select("g").remove();
     const margins = { left: 10, top: 10, right: 10, bottom: 10 };
     const width =
@@ -52,10 +52,10 @@ const IconArray = (props) => {
       })
       .attr("r", radius)
       .attr("fill", function (d) {
-        return d < 80 ? "teal" : "gray";
+        return d < highlight ? "teal" : "gray";
       })
       .style("stroke", "0");
-  }, [data, numCols, numRows]);
+  }, [data, numCols, numRows, highlight]);
 
   return (
     <div
