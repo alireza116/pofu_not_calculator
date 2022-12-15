@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import IconArray from "./components/IconArray";
+import IconArrayByColRow from "./components/IconArrayByColRow";
+import IconArrayByCount from "./components/IconArrayByCount";
 import "./App.css";
 
 function App() {
@@ -23,33 +24,49 @@ function App() {
         <p>IDEO website for Label Maker</p>
       </header>
       <hr></hr>
-      <input
-        type="range"
-        min={5}
-        max={20}
-        onChange={(event) => {
-          setNumCols(parseInt(event.target.value));
-        }}
-      />
-      <input
-        type="range"
-        min={5}
-        max={20}
-        onChange={(event) => {
-          setNumRows(parseInt(event.target.value));
-        }}
-      />
-      <input
-        type="range"
-        min={0}
-        max={100}
-        onChange={(event) => {
-          setPct(parseInt(event.target.value));
-        }}
-      />
-      <div>{numCols * numRows}</div>
-      <div className="mt-20" style={{ width: "600px", height: "600px" }}>
-        <IconArray numCols={numCols} numRows={numRows} pct={pct}></IconArray>
+
+      <div className="flex">
+        <div className="mt-20" style={{ width: "600px", height: "600px" }}>
+          <input
+            type="range"
+            min={5}
+            max={20}
+            onChange={(event) => {
+              setNumCols(parseInt(event.target.value));
+            }}
+          />
+          <input
+            type="range"
+            min={5}
+            max={20}
+            onChange={(event) => {
+              setNumRows(parseInt(event.target.value));
+            }}
+          />
+          <input
+            type="range"
+            min={0}
+            max={100}
+            onChange={(event) => {
+              setPct(parseInt(event.target.value));
+            }}
+          />
+          <div>{numCols * numRows}</div>
+          {/* <IconArrayByColRow
+            numCols={numCols}
+            numRows={numRows}
+            pct={pct}
+          ></IconArrayByColRow> */}
+        </div>
+        <div className="mt-20" style={{ width: "600px", height: "1200px" }}>
+          <IconArrayByCount
+            count={988}
+            iconSize={50}
+            gap={1}
+            icon={"/images/tree.svg"}
+            pct={pct}
+          ></IconArrayByCount>
+        </div>
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-import { useRef, useEffect, useState } from "react";
+import { useRef, useEffect } from "react";
 import * as d3 from "d3";
 
 const IconArray = (props) => {
@@ -26,7 +26,7 @@ const IconArray = (props) => {
 
     let x = d3.scaleBand().range([0, width]).domain(d3.range(numCols));
 
-    let y = d3.scaleBand().range([0, height]).domain(d3.range(numRows));
+    let y = d3.scaleBand().range([height, 0]).domain(d3.range(numRows));
 
     let radiusw = width / numCols / 2;
     let radiush = height / numRows / 2;
