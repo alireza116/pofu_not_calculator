@@ -3,6 +3,11 @@ import axios from "axios";
 import IconArray from "./components/IconArray";
 import "./App.css";
 
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home.js';
+import PersuasiveGames from './pages/PersuasiveGames.js';
+
+
 function App() {
   const getData = async () => {
     const { data } = await axios.get(`/getThings`);
@@ -19,6 +24,12 @@ function App() {
 
   return (
     <div className="App">
+      <Router>
+        <Routes>
+          <Route path='/home' element={<Home />} />
+          <Route path='/persuasive-games' element={<PersuasiveGames />} />
+        </Routes>
+      </Router>
       <header className="text-3xl font-bold underline">
         <p>IDEO website for Label Maker</p>
       </header>
