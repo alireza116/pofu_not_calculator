@@ -1,14 +1,15 @@
-import React, { useEffect, useState, useRef, Suspense } from 'react';
-import IdeoLogo from '../assets/ideo-logo.svg';
+import React, { useEffect, useState, useRef, Suspense } from "react";
+import IdeoLogo from "../assets/ideo-logo.svg";
 import { ArrowDown } from "phosphor-react";
-import Fade from 'react-reveal/Fade';
+import Fade from "react-reveal/Fade";
 
-import Menu from '../components/Menu.js'
-import GradientBg from '../assets/gradient-bg.mp4'
+import Menu from "../components/menu.js";
+import GradientBg from "../assets/gradient-bg.mp4";
 
-function Home(){
-    const menuRef = useRef(null)
-    const scrollToMenu = () => menuRef.current.scrollIntoView({ behavior: 'smooth' })
+function Home() {
+  const menuRef = useRef(null);
+  const scrollToMenu = () =>
+    menuRef.current.scrollIntoView({ behavior: "smooth" });
 
     return(
         <>
@@ -38,4 +39,4 @@ function Home(){
     );
 }
 
-export default Home
+export default Home;

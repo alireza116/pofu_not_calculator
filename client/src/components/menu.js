@@ -1,7 +1,15 @@
-import React, { useEffect, useState, Suspense } from 'react';
+import React, { useEffect, useState, Suspense } from "react";
 import { Link } from "react-router-dom";
-import Fade from 'react-reveal/Fade';
-import { Tag, Robot, Polygon, Infinity, ScribbleLoop, Parachute, Strategy  } from "phosphor-react";
+import Fade from "react-reveal/Fade";
+import {
+  Tag,
+  Robot,
+  Polygon,
+  Infinity,
+  ScribbleLoop,
+  Parachute,
+  Strategy,
+} from "phosphor-react";
 
 function Menu(){
     return(
@@ -26,6 +34,5 @@ function Menu(){
             </Fade>
         </div>
     );
-}
 
-export default Menu
+export default Menu;
