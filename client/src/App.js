@@ -3,17 +3,16 @@ import axios from "axios";
 import IconArrayByColRow from "./components/IconArrayByColRow";
 import IconArrayByCount from "./components/IconArrayByCount";
 import "./App.css";
-
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home.js';
-import CarbonLabeling from './pages/CarbonLabeling';
-import ClimateChatbot from './pages/ClimateChatbot';
-import InteractiveDataVis from './pages/InteractiveDataVis.js';
-import ExploratoryExplanation from './pages/ExploratoryExplanation';
-import PersuasiveGames from './pages/PersuasiveGames.js';
-import LabelMaker from './pages/LabelMaker.js';
-import ScrollToTop from './components/ScrollToTop.js';
-
+import { Navigate } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home.js";
+import CarbonLabeling from "./pages/CarbonLabeling";
+import ClimateChatbot from "./pages/ClimateChatbot";
+import InteractiveDataVis from "./pages/InteractiveDataVis.js";
+import ExploratoryExplanation from "./pages/ExploratoryExplanation";
+import PersuasiveGames from "./pages/PersuasiveGames.js";
+import LabelMaker from "./pages/LabelMaker.js";
+import ScrollToTop from "./components/ScrollToTop.js";
 
 function App() {
   const getData = async () => {
@@ -34,21 +33,24 @@ function App() {
       <Router>
         <ScrollToTop />
         <Routes>
-          <Route path='/home' element={<Home />} />
-          <Route path='/carbon-labeling' element={<CarbonLabeling />} />
-          <Route path='/climate-chatbot' element={<ClimateChatbot />} />
-          <Route path='/interactive-data-vis' element={<InteractiveDataVis />} />
-          <Route path='/exploratory-explanation' element={<ExploratoryExplanation />} />
-          <Route path='/persuasive-games' element={<PersuasiveGames />} />
-          <Route path='/make-your-carbon-labels' element={<LabelMaker />} />
+          <Route path="/" element={<Navigate to="/home"></Navigate>}></Route>
+          <Route path="/home" element={<Home />} />
+          <Route path="/carbon-labeling" element={<CarbonLabeling />} />
+          <Route path="/climate-chatbot" element={<ClimateChatbot />} />
+          <Route
+            path="/interactive-data-vis"
+            element={<InteractiveDataVis />}
+          />
+          <Route
+            path="/exploratory-explanation"
+            element={<ExploratoryExplanation />}
+          />
+          <Route path="/persuasive-games" element={<PersuasiveGames />} />
+          <Route path="/make-your-carbon-labels" element={<LabelMaker />} />
         </Routes>
       </Router>
-      <header className="text-3xl font-bold underline">
-        <p>IDEO website for Label Maker</p>
-      </header>
-      <hr></hr>
 
-      <div className="flex">
+      {/* <div className="flex">
         <div className="mt-20" style={{ width: "600px", height: "600px" }}>
           <input
             type="range"
@@ -80,7 +82,7 @@ function App() {
             numRows={numRows}
             pct={pct}
           ></IconArrayByColRow> */}
-        </div>
+      {/* </div>
         <div className="mt-20" style={{ width: "600px", height: "1200px" }}>
           <IconArrayByCount
             count={988}
@@ -89,8 +91,8 @@ function App() {
             icon={"/images/tree.svg"}
             pct={pct}
           ></IconArrayByCount>
-        </div>
-      </div>
+        </div> */}
+      {/* </div> */}
     </div>
   );
 }

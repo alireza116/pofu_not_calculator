@@ -3,25 +3,28 @@ import * as d3 from "d3";
 
 const IconArrayByCount = (props) => {
   const svgContainer = useRef(null);
-  // const numCols = props.numCols || 10;
-  const numRows = props.numRows || 10;
   console.log(props.icon);
   const gap = props.gap || 5;
   const data = d3.range(props.count);
   let highlight = Math.floor((props.pct / 100) * data.length);
-
+  let primaryColor = props.primaryColor || "#202020";
+  let secondaryColor = props.secondaryColor || "#fafafa";
   const width = props.width || "100%";
   const height = props.height || "100%";
+  const showHighlightFirst = props.showHighlightFirst || false;
+
+  useEffect(() => {
+    const svg = d3.select(svgContainer.current);
+  });
 
   useEffect(() => {
     const svg = d3.select(svgContainer.current);
     console.log();
     svg.selectAll("*").remove();
-    const margins = { left: 10, top: 10, right: 10, bottom: 10 };
+    const margins = { left: 0, top: 5, right: 0, bottom: 5 };
     const width =
       svg.node().getBoundingClientRect().width - margins.left - margins.right;
 
-    console.log(props.iconSize);
     let numCols = Math.floor(width / props.iconSize);
     let numRows = Math.ceil(data.length / numCols);
     let height = numRows * (props.iconSize + gap);
@@ -36,21 +39,11 @@ const IconArrayByCount = (props) => {
 
     let container = svg
       .append("g")
-      .attr(
-        "transform",
-        `translate(${margins.left + radius},${margins.top + radius})`
-      );
+      .attr("transform", `translate(${margins.left},${margins.top})`);
 
     if (props.icon) {
       console.log("icon");
       d3.xml(props.icon).then((d) => {
-        // console.log(
-        //   d3
-        //     .select(d.documentElement)
-        //     .select("g")
-        //     .node()
-        //     .getBoundingClientRect().height
-        // );
         icon.append(() => {
           return d3
             .select(d.documentElement)
@@ -64,7 +57,7 @@ const IconArrayByCount = (props) => {
           .getBoundingClientRect();
         let iconScaleWidth = props.iconSize / iconBoundingRect.width;
         let iconScaleHeight = props.iconSize / iconBoundingRect.height;
-        let iconScale = d3.min([iconScaleHeight, iconScaleWidth]);
+        let iconScale = d3.min([iconScaleHeight, iconScaleWidth]) * 0.8;
 
         d3.select("#arrayIcon").attr("transform", `scale(${iconScale})`);
 
@@ -86,7 +79,13 @@ const IconArrayByCount = (props) => {
             return y(Math.floor(d / numCols));
           })
           .attr("fill", function (d) {
-            return d < highlight ? "teal" : "gray";
+            if (showHighlightFirst) {
+              return d < highlight ? primaryColor : secondaryColor;
+            } else {
+              return d < data.length - highlight
+                ? secondaryColor
+                : primaryColor;
+            }
           })
           .style("stroke", "0");
       });
@@ -103,11 +102,24 @@ const IconArrayByCount = (props) => {
         })
         .attr("r", radius)
         .attr("fill", function (d) {
-          return d < highlight ? "teal" : "gray";
+          if (showHighlightFirst) {
+            return d < highlight ? primaryColor : secondaryColor;
+          } else {
+            return d < data.length - highlight ? secondaryColor : primaryColor;
+          }
         })
         .style("stroke", "0");
     }
-  }, [data, highlight, gap, props.iconSize, props.icon]);
+  }, [
+    data,
+    highlight,
+    gap,
+    props.iconSize,
+    props.icon,
+    primaryColor,
+    secondaryColor,
+    showHighlightFirst,
+  ]);
 
   return (
     <div
@@ -124,7 +136,7 @@ const IconArrayByCount = (props) => {
         // height={"100%"}
 
         ref={svgContainer}
-      />
+      ></svg>
     </div>
   );
 };
