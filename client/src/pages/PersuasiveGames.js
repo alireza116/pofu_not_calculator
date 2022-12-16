@@ -1,6 +1,6 @@
 import React, { useEffect, useState, Suspense, useRef } from 'react';
 import IdeoLogo from '../assets/ideo-logo.svg'
-import { ArrowDown, ArrowLeft } from "phosphor-react";
+import { ArrowRight, ArrowLeft, HouseSimple } from "phosphor-react";
 import { Link } from "react-router-dom";
 import Fade from 'react-reveal/Fade';
 
@@ -32,7 +32,7 @@ function PersuasiveGame(){
                 </Fade>
                 <hr></hr>
                 <Fade bottom>
-                    <p className= "text-left font-['Arima'] font-bold text-2xl leading-relaxed rotate-180 mt-10 mb-20 w-1/2">
+                    <p className= "text-left font-['Arima'] font-bold text-2xl leading-relaxed mt-10 mb-20 w-1/2">
                         INSPIRATIONAL & SECONDARY RESEARCH 
                     </p>
                     <div className="relative" style={{height: "800px"}}>
@@ -80,13 +80,51 @@ function PersuasiveGame(){
                     </div>      
                 </Fade>
             </div>
-            <div className="p-36">
+            <div className="px-36 pt-10 pb-36 h-[1000px]">
                 <Fade bottom>
-                    <p className= "text-left font-['Arima'] font-bold text-2xl leading-relaxed rotate-180 mt-10 mb-20 w-1/2">
+                    <p className= "text-left font-['Arima'] font-bold text-2xl leading-relaxed mt-10 mb-20 w-1/2">
                         WHAT TO CONSIDER
                     </p>
+                    <div className= "relative mb-20">
+                        <div className= "absolute text-left font-['Arima'] text-3xl leading-relaxed p-10 m-5 bg-zinc-100 aspect-square w-72 -rotate-2">
+                            <h1>Gaming mechanisms to engage users</h1>
+                        </div>
+                        <div className= "absolute text-left font-['Arima'] text-3xl leading-relaxed p-10 m-5 bg-zinc-100 aspect-square w-72 left-96 rotate-2">
+                            <h1>Accessible interactions</h1>
+                        </div>
+                        <div className= "absolute text-left font-['Arima'] text-3xl leading-relaxed p-10 m-5 bg-zinc-100 aspect-square w-72 right-80 -rotate-3">
+                            <h1>Balancing education and fun</h1>
+                        </div>
+                    </div>
+                    <div className= "flex mb-20">
+                        <div className= "absolute text-left font-['Arima'] text-3xl leading-relaxed p-10 m-5 bg-zinc-100 aspect-square w-72 top-80 left-16 rotate-2">
+                            <h1>Browser-based games vs. AR/VR games</h1>
+                        </div>
+                        <div className= "absolute text-left font-['Arima'] text-3xl leading-relaxed p-10 m-5 bg-zinc-100 aspect-square w-72 top-80 right-52 rotate-2">
+                            <h1>Casual games vs. competitive games</h1>
+                        </div>
+                        <div className= "absolute text-left font-['Arima'] text-3xl leading-relaxed p-10 m-5 bg-zinc-100 aspect-square w-72 top-80 left-96">
+                            <h1>Who can we persuade through games?</h1>
+                        </div>
+                    </div>
                 </Fade>
             </div>
+            <div className="px-36 pt-10 pb-36 h-[60px]">
+                <Fade bottom>
+                    <div className="grid grid-cols-3">
+                        <Link className="mx-5 text-left font-['Arima'] flex mx-0 text-2xl justify-self-start" to="/exploratory-explanation">
+                            <ArrowLeft size={28} className="px-0"/>&nbsp;Exploratory Explanation
+                        </Link>
+                        <Link className="justify-self-center" to="/home">
+                            <HouseSimple size={36} className="justify-self-center"/>
+                        </Link>
+                        <Link className="mx-5 text-left font-['Arima'] flex mx-0 text-2xl justify-self-end text-white" to="/home">
+                            Exploratory Explanation &nbsp;<ArrowRight size={28} className="px-0"/>
+                        </Link>
+                    </div>
+                </Fade>
+            </div>
+            
         </>
     );
 }
