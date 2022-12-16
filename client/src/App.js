@@ -14,6 +14,7 @@ import PersuasiveGames from "./pages/PersuasiveGames.js";
 import LabelMaker from "./pages/LabelMaker.js";
 import ScrollToTop from "./components/ScrollToTop.js";
 
+
 function App() {
   const getData = async () => {
     const { data } = await axios.get(`/getThings`);
@@ -93,6 +94,7 @@ function App() {
           ></IconArrayByCount>
         </div> */}
       {/* </div> */}
+
     </div>
   );
 }
