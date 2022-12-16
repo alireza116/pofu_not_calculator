@@ -4,6 +4,15 @@ import { ArrowDown, ArrowLeft } from "phosphor-react";
 import { Link } from "react-router-dom";
 import Fade from 'react-reveal/Fade';
 
+import Pictograms from '../assets/data-vis-1.png';
+import Blast from '../assets/data-vis-2.png';
+import Wrap from '../assets/data-vis-3.png';
+import IdealPrac from '../assets/data-vis-4.png';
+import Isotype from '../assets/data-vis-5.png';
+import NYTClimate from '../assets/data-vis-6.png';
+import Equivalent from '../assets/data-vis-7.png';
+
+
 
 function InteractiveDataVis(){
     // const contentRef = useRef(null)
@@ -31,32 +40,26 @@ function InteractiveDataVis(){
                     <p className= "text-left font-['Arima'] font-bold text-2xl leading-relaxed rotate-180 mt-10 mb-20 w-1/2">
                         INSPIRATIONAL & SECONDARY RESEARCH 
                     </p>
-                    {/* <div className="relative" style={{height: "800px"}}>
+                    <div className="relative" style={{height: "800px"}}>
                         <Fade left>
-                            <video width="400" autoPlay={true} loop={true} muted className="absolute top-96 left-0">
-                                <source src={WhereWaldo} type="video/mp4" />
-                            </video>
-                            <video width="600" autoPlay={true} loop={true} muted className="absolute top-0 left-10">
-                                <source src={ElephantInRoom} type="video/mp4" />
-                            </video>
-                            <img src={CoalBall} alt="Coal Balls" className="absolute top-72 left-80" style={{width: "480px"}}/>
+                            <img src={Pictograms} alt="Coal Balls" className="absolute top-0 left-96 rounded-xl drop-shadow-xl" style={{width: "280px"}}/>
+                            <img src={Blast} alt="Coal Balls" className="absolute top-12 left-10 rounded-xl drop-shadow-xl" style={{width: "280px"}}/>
+                            <img src={Wrap} alt="Coal Balls" className="absolute top-0 right-96 rounded-xl drop-shadow-xl" style={{width: "280px"}}/>
+                            <img src={IdealPrac} alt="Coal Balls" className="absolute top-52 left-72 rounded-xl drop-shadow-xl" style={{width: "280px"}}/>
                          </Fade>
                          <Fade right>
-                            <video width="600" autoPlay={true} loop={true} muted className="absolute top-20 right-40">
-                                <source src={MusicRoom} type="video/mp4" />
-                            </video>
-                            <video width="400" autoPlay={true} loop={true} muted className="absolute top-96 right-20">
-                                <source src={ParticleFields} type="video/mp4" />
-                            </video>
+                            <img src={Isotype} alt="Coal Balls" className="absolute top-20 right-40 rounded-xl drop-shadow-xl" style={{width: "280px"}}/>
+                            <img src={NYTClimate} alt="Coal Balls" className="absolute top-72 right-4 rounded-xl drop-shadow-xl" style={{width: "280px"}}/>
+                            <img src={Equivalent} alt="Coal Balls" className="absolute top-72 rounded-xl drop-shadow-xl" style={{width: "280px", right: "30rem"}}/>
                         </Fade>
-                    </div> */}
+                    </div>
                 </Fade>
             </main> 
             <div className="p-36 bg-violet-100">
                 <Fade bottom>
                     <div className="px-10">
                         <p className= "text-left font-['Arima'] font-bold text-2xl leading-relaxed mt-10 mb-10 w-1/2">
-                            PROVOCATION #1
+                            PROVOCATION
                         </p>
                         <p className= "text-left font-['Arima'] text-6xl leading-normal mb-20">
                             Carbon Footprint Drawing Tool. Lorem ipsum dolor sit amet, consectetur adipiscing elit

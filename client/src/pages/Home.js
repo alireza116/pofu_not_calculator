@@ -18,17 +18,17 @@ function Home(){
             <main className = "h-screen m-36 opening-section">
                 <img src={IdeoLogo} alt="Ideo Logo" className="z-10"/> 
                 <Fade bottom>
-                    <p className= "text-left font-['Arima'] text-8xl leading-snug mt-10 z-1">
-                        HMW <span className="text-orange-600 font-semibold">make sense of the climate </span> 
+                    <p className= "text-left font-['Arima'] text-7xl leading-snug mt-10 z-1">
+                        HMW <span className="text-orange-600 ">make sense of the climate </span> 
                         & communicate carbon footprint calculations  
-                        <span className="text-indigo-600 font-semibold"> in intuitive & effective ways</span>?
+                        <span className="text-indigo-600 "> in intuitive & effective ways</span>?
                     </p>
                 </Fade>
                 <div className="absolute bottom-10">
                     <ArrowDown size={60} onClick={scrollToMenu} />
                 </div>
             </main> 
-            <div className = "h-screen p-36" ref = {menuRef}> 
+            <div className = "h-auto px-36 py-6" ref = {menuRef}> 
                 <p className= "text-left font-['Arima'] text-4xl leading-snug mt-10">
                     We can do this through ...
                 </p>
