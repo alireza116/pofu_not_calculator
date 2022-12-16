@@ -6,7 +6,13 @@ import "./App.css";
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home.js';
+import CarbonLabeling from './pages/CarbonLabeling';
+import ClimateChatbot from './pages/ClimateChatbot';
+import InteractiveDataVis from './pages/InteractiveDataVis.js';
+import ExploratoryExplanation from './pages/ExploratoryExplanation';
 import PersuasiveGames from './pages/PersuasiveGames.js';
+import LabelMaker from './pages/LabelMaker.js';
+import ScrollToTop from './components/ScrollToTop.js';
 
 
 function App() {
@@ -26,9 +32,15 @@ function App() {
   return (
     <div className="App">
       <Router>
+        <ScrollToTop />
         <Routes>
           <Route path='/home' element={<Home />} />
+          <Route path='/carbon-labeling' element={<CarbonLabeling />} />
+          <Route path='/climate-chatbot' element={<ClimateChatbot />} />
+          <Route path='/interactive-data-vis' element={<InteractiveDataVis />} />
+          <Route path='/exploratory-explanation' element={<ExploratoryExplanation />} />
           <Route path='/persuasive-games' element={<PersuasiveGames />} />
+          <Route path='/make-your-carbon-labels' element={<LabelMaker />} />
         </Routes>
       </Router>
       <header className="text-3xl font-bold underline">
