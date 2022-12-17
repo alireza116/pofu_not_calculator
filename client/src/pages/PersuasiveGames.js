@@ -112,14 +112,14 @@ function PersuasiveGame(){
             <div className="px-36 pt-10 pb-36 h-[60px]">
                 <Fade bottom>
                     <div className="grid grid-cols-3">
-                        <Link className="mx-5 text-left font-['Arima'] flex mx-0 text-2xl justify-self-start" to="/exploratory-explanation">
-                            <ArrowLeft size={28} className="px-0"/>&nbsp;Exploratory Explanation
+                        <Link className="mx-5 text-left font-['Arima'] flex mx-0 text-2xl justify-self-start" to="/climate-chatbot">
+                            <ArrowLeft size={28} className="px-0"/>&nbsp;Associative Climate Chatbot
                         </Link>
                         <Link className="justify-self-center" to="/home">
                             <HouseSimple size={36} className="justify-self-center"/>
                         </Link>
                         <Link className="mx-5 text-left font-['Arima'] flex mx-0 text-2xl justify-self-end text-white" to="/home">
-                            Exploratory Explanation &nbsp;<ArrowRight size={28} className="px-0"/>
+                            Associative Cliate Chatbot  &nbsp;<ArrowRight size={28} className="px-0"/>
                         </Link>
                     </div>
                 </Fade>
