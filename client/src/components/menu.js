@@ -20,13 +20,13 @@ function Menu(){
                     <Link className="text-2xl mx-5 px-8 py-5 bg-amber-100 rounded-full" to="/make-your-carbon-labels">Play with Prototype</Link>
                 </h1>
                 <h1 className= "text-left font-['Arima'] text-6xl leading-relaxed my-4 flex items-center">
-                    <Robot size={80} /><Link className="mx-5" to="/climate-chatbot">&nbsp;Associative Climate Chabot</Link>
+                    <ScribbleLoop size={80} /><Link className="mx-5" to="/exploratory-explanation">&nbsp;Exploratory Explanation</Link>
                 </h1>
                 <h1 className= "text-left font-['Arima'] text-6xl leading-relaxed my-4 flex items-center">
                     <Polygon size={80} /><Link className="mx-5" to="/interactive-data-vis">&nbsp;Interactive Data Visualization</Link>
                 </h1>
                 <h1 className= "text-left font-['Arima'] text-6xl leading-relaxed my-4 flex items-center">
-                    <ScribbleLoop size={80} /><Link className="mx-5" to="/exploratory-explanation">&nbsp;Exploratory Explanation</Link>
+                    <Robot size={80} /><Link className="mx-5" to="/climate-chatbot">&nbsp;Associative Climate Chatbot</Link>
                 </h1>
                 <h1 className= "text-left font-['Arima'] text-6xl leading-relaxed my-4 flex items-center">
                     <Strategy size={80} /><Link className="mx-5" to="/persuasive-games">&nbsp;Persuasive Games</Link>
@@ -34,5 +34,6 @@ function Menu(){
             </Fade>
         </div>
     );
+}
 
 export default Menu;
