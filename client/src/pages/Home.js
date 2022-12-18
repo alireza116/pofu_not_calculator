@@ -4,6 +4,7 @@ import { ArrowDown } from "phosphor-react";
 import Fade from "react-reveal/Fade";
 
 import Menu from "../components/menu.js";
+import Comment from "../components/comment.js";
 import GradientBg from "../assets/gradient-bg.mp4";
 
 function Home() {
@@ -25,16 +26,17 @@ function Home() {
                         <span className="text-indigo-600 "> in intuitive & effective ways</span>?
                     </p>
                 </Fade>
-                <div className="absolute bottom-10">
+                <div className="absolute bottom-10 hover:text-white hover:cursor-pointer duration-300">
                     <ArrowDown size={60} onClick={scrollToMenu} />
                 </div>
             </main> 
-            <div className = "h-auto px-36 py-6" ref = {menuRef}> 
+            <div className = "h-auto px-36 pt-6 pb-24" ref = {menuRef}> 
                 <p className= "text-left font-['Arima'] text-4xl leading-snug mt-10">
                     We can do this through ...
                 </p>
                 <Menu />
             </div> 
+            <Comment />
         </>
     );
 }
