@@ -3,6 +3,9 @@ import IdeoLogo from '../assets/ideo-logo.svg'
 import { ArrowRight, ArrowLeft, HouseSimple } from "phosphor-react";
 import { Link } from "react-router-dom";
 import Fade from 'react-reveal/Fade';
+import Flip from 'react-reveal/Flip';
+
+import BackButton from '../components/BackButton.js'
 
 import CoalBall from '../assets/coal-ball.gif';
 import ElephantInRoom from '../assets/elephant-in-room.mp4';
@@ -17,9 +20,7 @@ function PersuasiveGame(){
     return(
         <>
             <main className = "h-[1300px] m-36"> 
-                <Link className="mx-5 text-left font-['Arima'] flex mx-0 text-2xl" to="/home">
-                    <ArrowLeft size={28} className="px-0"/>&nbsp;Back
-                </Link>
+                <BackButton />
                 <Fade bottom>
                     <p className= "text-left font-['Arima'] text-8xl leading-snug mt-10">
                         Persuasive Games
@@ -36,7 +37,7 @@ function PersuasiveGame(){
                         INSPIRATIONAL & SECONDARY RESEARCH 
                     </p>
                     <div className="relative" style={{height: "800px"}}>
-                        <Fade left>
+                        <Flip left>
                             <video width="400" autoPlay={true} loop={true} muted className="absolute top-96 left-0">
                                 <source src={WhereWaldo} type="video/mp4" />
                             </video>
@@ -44,15 +45,15 @@ function PersuasiveGame(){
                                 <source src={ElephantInRoom} type="video/mp4" />
                             </video>
                             <img src={CoalBall} alt="Coal Balls" className="absolute top-72 left-80" style={{width: "480px"}}/>
-                         </Fade>
-                         <Fade right>
-                            <video width="600" autoPlay={true} loop={true} muted className="absolute top-20 right-40">
+                         </Flip>
+                         <Flip right>
+                            <video width="600" autoPlay={true} loop={true} muted className="absolute top-20 right-36">
                                 <source src={MusicRoom} type="video/mp4" />
                             </video>
-                            <video width="400" autoPlay={true} loop={true} muted className="absolute top-96 right-20">
+                            <video width="400" autoPlay={true} loop={true} muted className="absolute top-96 right-10">
                                 <source src={ParticleFields} type="video/mp4" />
                             </video>
-                        </Fade>
+                        </Flip>
                     </div>
                 </Fade>
             </main> 
@@ -86,24 +87,24 @@ function PersuasiveGame(){
                         WHAT TO CONSIDER
                     </p>
                     <div className= "relative mb-20">
-                        <div className= "absolute text-left font-['Arima'] text-3xl leading-relaxed p-10 m-5 bg-zinc-100 aspect-square w-72 -rotate-2">
+                        <div className= "absolute text-left font-['Arima'] text-3xl leading-relaxed p-10 m-5 bg-indigo-100 aspect-square w-72 -rotate-2">
                             <h1>Gaming mechanisms to engage users</h1>
                         </div>
-                        <div className= "absolute text-left font-['Arima'] text-3xl leading-relaxed p-10 m-5 bg-zinc-100 aspect-square w-72 left-96 rotate-2">
+                        <div className= "absolute text-left font-['Arima'] text-3xl leading-relaxed p-10 m-5 bg-violet-100 aspect-square w-72 left-96 rotate-2">
                             <h1>Accessible interactions</h1>
                         </div>
-                        <div className= "absolute text-left font-['Arima'] text-3xl leading-relaxed p-10 m-5 bg-zinc-100 aspect-square w-72 right-80 -rotate-3">
+                        <div className= "absolute text-left font-['Arima'] text-3xl leading-relaxed p-10 m-5 bg-indigo-100 aspect-square w-72 right-80 -rotate-3">
                             <h1>Balancing education and fun</h1>
                         </div>
                     </div>
                     <div className= "flex mb-20">
-                        <div className= "absolute text-left font-['Arima'] text-3xl leading-relaxed p-10 m-5 bg-zinc-100 aspect-square w-72 top-80 left-16 rotate-2">
+                        <div className= "absolute text-left font-['Arima'] text-3xl leading-relaxed p-10 m-5 bg-violet-100 aspect-square w-72 top-80 left-16 rotate-2">
                             <h1>Browser-based games vs. AR/VR games</h1>
                         </div>
-                        <div className= "absolute text-left font-['Arima'] text-3xl leading-relaxed p-10 m-5 bg-zinc-100 aspect-square w-72 top-80 right-52 rotate-2">
+                        <div className= "absolute text-left font-['Arima'] text-3xl leading-relaxed p-10 m-5 bg-violet-100 aspect-square w-72 top-80 right-52 rotate-2">
                             <h1>Casual games vs. competitive games</h1>
                         </div>
-                        <div className= "absolute text-left font-['Arima'] text-3xl leading-relaxed p-10 m-5 bg-zinc-100 aspect-square w-72 top-80 left-96">
+                        <div className= "absolute text-left font-['Arima'] text-3xl leading-relaxed p-10 m-5 bg-indigo-100 aspect-square w-72 top-80 left-96">
                             <h1>Who can we persuade through games?</h1>
                         </div>
                     </div>
