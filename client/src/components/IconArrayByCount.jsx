@@ -127,13 +127,14 @@ const IconArrayByCount = (props) => {
         width: width,
         height: height,
         margin: "0 auto",
-        marginBottom: "5px",
+        marginBottom: "10px",
       }}
     >
       <svg
         style={{ cursor: "pointer" }}
         width={"100%"}
         // height={"100%"}
+
         ref={svgContainer}
       ></svg>
     </div>

@@ -23,7 +23,7 @@ function Home() {
                     <p className= "text-left font-['Arima'] text-7xl leading-snug mt-10 z-1">
                         HMW <span className="text-orange-600 ">make sense of the climate </span> 
                         & communicate carbon footprint calculations  
-                        <span className="text-indigo-600 "> in intuitive, effective & perhaps playful ways</span>?
+                        <span className="text-indigo-600 "> in intuitive & effective ways</span>?
                     </p>
                 </Fade>
                 <div className="absolute bottom-10 hover:cursor-pointer duration-300">
