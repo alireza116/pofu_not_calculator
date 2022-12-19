@@ -27,13 +27,15 @@ function CarbonLabeling(){
                     <p className= "text-left font-['Arima'] text-8xl leading-snug mt-10">
                         Generative Carbon Labeling
                     </p>
-                    <p className= "text-left font-['Arima'] text-2xl leading-relaxed mt-10 mb-10 w-1/2">
+                    <p className= "text-left font-['Arima'] text-2xl leading-relaxed mt-10 mb-16 w-1/2">
                         Carbon labeling uses generative technology to turn numeric information into visual labels, tags and even art pieces.
                         At IDEO, we design the usage, generative logic, visual and storytelling of the carbon labels and prototype the tangible experience of creating and using these labels. 
                     </p>
-                    <Link to="/make-your-carbon-labels">
-                        <div className="font-['Arima'] text-2xl mb-20 px-8 py-5 w-80 bg-amber-100 rounded-full hover:text-white hover:bg-stone-700 duration-300">Play with Prototype</div>
-                    </Link>   
+                    <div className="text-left mb-20">
+                        <Link className="font-['Arima'] text-2xl px-12 py-5 bg-amber-100 rounded-full height-12 hover:text-white hover:bg-stone-700 duration-300" to="/make-your-carbon-labels">
+                            Play with Prototype
+                        </Link>
+                    </div>
                 </Fade>
                 <hr></hr>
                 <Fade bottom>
