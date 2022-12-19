@@ -208,7 +208,7 @@ function ExploratoryExplanation() {
               to="/carbon-labeling"
             >
               <ArrowLeft size={28} className="px-0" />
-              &nbsp;Generative Carbon Labeling
+              &nbsp;Interactive Carbon Label Maker
             </Link>
             <Link className="justify-self-center" to="/home">
               <HouseSimple size={36} className="justify-self-center" />
@@ -217,7 +217,7 @@ function ExploratoryExplanation() {
               className="mx-5 text-left font-['Arima'] flex mx-0 text-2xl justify-self-end"
               to="/interactive-data-vis"
             >
-              Interactive Data Visualization &nbsp;
+              Powerful Data Visualization &nbsp;
               <ArrowRight size={28} className="px-0" />
             </Link>
           </div>

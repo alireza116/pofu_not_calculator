@@ -25,7 +25,7 @@ function InteractiveDataVis() {
         <BackButton />
         <Fade bottom>
           <p className="text-left font-['Arima'] text-8xl leading-snug mt-10">
-            Persuasive Data Visualization
+            Powerful Data Visualization
           </p>
           <p className="text-left font-['Arima'] text-2xl leading-relaxed mt-10 mb-20 w-1/2">
             Data visualizations are amazing ways to communicate complex data
@@ -204,7 +204,7 @@ function InteractiveDataVis() {
               to="/exploratory-explanation"
             >
               <ArrowLeft size={28} className="px-0" />
-              &nbsp;Exploratory Explanation
+              &nbsp;Explorable Explanation
             </Link>
             <Link className="justify-self-center" to="/home">
               <HouseSimple size={36} className="justify-self-center" />

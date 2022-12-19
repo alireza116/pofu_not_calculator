@@ -25,7 +25,7 @@ function CarbonLabeling() {
           <p className="text-left font-['Arima'] text-8xl leading-snug mt-10">
             Interactive Carbon Label Maker
           </p>
-          <p className="text-left font-['Arima'] text-2xl leading-relaxed mt-10 w-1/2">
+          <p className="text-left font-['Arima'] text-2xl leading-relaxed mb-16 mt-10 w-1/2">
             Carbon labeling turns numeric information into visual labels, tags
             and even art pieces. At IDEO, we design the usage, generative logic,
             visual and storytelling of the carbon labels and prototype the
@@ -33,11 +33,7 @@ function CarbonLabeling() {
             explorable explanations, interactive visualizations, and visual
             communication design to create effective and engaging carbon labels.
           </p>
-          <p className="text-left font-['Arima'] text-2xl leading-relaxed mt-2 mb-16 w-1/2">
-            We use Icon Arrays to to visualize the equivalent number of trees
-            offset by our choice to fly for our projects. What would be other
-            equivalent ideas to persuade us to fly less?
-          </p>
+
           <div className="text-left mb-20">
             <Link
               className="font-['Arima'] text-2xl px-12 py-5 bg-amber-100 rounded-full height-12 hover:text-white hover:bg-stone-700 duration-300"
@@ -257,7 +253,7 @@ function CarbonLabeling() {
               className="mx-5 text-left font-['Arima'] flex mx-0 text-2xl justify-self-end"
               to="/exploratory-explanation"
             >
-              Exploratory Explanation &nbsp;
+              Explorable Explanation &nbsp;
               <ArrowRight size={28} className="px-0" />
             </Link>
           </div>
