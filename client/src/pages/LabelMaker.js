@@ -57,10 +57,13 @@ function LabelMaker() {
 
   return (
     <>
-      <main className='h-screen flex'>
-        <div className='flex-1 bg-zinc-900 p-24'>
-          <Link className="mx-5 text-left font-['Arima'] flex mx-0 text-2xl text-white" to='/home'>
-            <ArrowLeft size={28} className='px-0 text-white' />
+      <main className="h-screen flex">
+        <div className="flex-1 bg-zinc-900 p-24">
+          <Link
+            className="mx-5 text-left font-['Arima'] flex mx-0 text-2xl text-white hover:italic duration-300"
+            to="/home"
+          >
+            <ArrowLeft size={28} className="px-0 text-white" />
             &nbsp;Back
           </Link>
 
