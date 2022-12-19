@@ -43,15 +43,43 @@ function ExploratoryExplanation() {
           </p>
           <div className="relative" style={{height: "800px"}}>
               <Flip left>
-                  <img src={PersuasiveStorytelling} alt="Coal Balls" className="absolute top-0 left-96 rounded-xl drop-shadow-xl" style={{width: "280px"}}/>
-                  <img src={ExplorableExplanations} alt="Coal Balls" className="absolute top-12 left-10 rounded-xl drop-shadow-xl" style={{width: "280px"}}/>
-                  <img src={Draw} alt="Coal Balls" className="absolute top-0 right-96 rounded-xl drop-shadow-xl" style={{width: "280px"}}/>
-                  <img src={ClimateGoals} alt="Coal Balls" className="absolute top-52 left-72 rounded-xl drop-shadow-xl" style={{width: "280px"}}/>
+                  <a href="https://www.youtube.com/watch?v=pCA62zf99ck" target="_blank">
+                      <Flip left>
+                        <img src={PersuasiveStorytelling} alt="Coal Balls" className="absolute top-0 left-96 rounded-xl drop-shadow-xl" style={{width: "280px"}}/>
+                      </Flip>
+                  </a>
+                  <a href="https://explorabl.es/" target="_blank">
+                      <Flip left>
+                        <img src={ExplorableExplanations} alt="Coal Balls" className="absolute top-12 left-10 rounded-xl drop-shadow-xl" style={{width: "280px"}}/>
+                      </Flip>
+                  </a>
+                  <a href="https://www.nytimes.com/interactive/2015/05/28/upshot/you-draw-it-how-family-income-affects-childrens-college-chances.html" target="_blank">
+                      <Flip left>
+                        <img src={Draw} alt="Coal Balls" className="absolute top-0 right-96 rounded-xl drop-shadow-xl" style={{width: "280px"}}/>
+                      </Flip>
+                  </a>
+                  <a href="https://www.nytimes.com/interactive/2017/11/06/climate/world-emissions-goals-far-off-course.html" target="_blank">
+                      <Flip left>
+                      <img src={ClimateGoals} alt="Coal Balls" className="absolute top-52 left-72 rounded-xl drop-shadow-xl" style={{width: "280px"}}/>
+                      </Flip>
+                  </a>
                 </Flip>
                 <Flip right>
-                  <img src={ClimateMap} alt="Coal Balls" className="absolute top-20 right-40 rounded-xl drop-shadow-xl" style={{width: "280px"}}/>
-                  <img src={IncomeMobility} alt="Coal Balls" className="absolute top-72 right-4 rounded-xl drop-shadow-xl" style={{width: "280px"}}/>
-                  <img src={PolygonParable} alt="Coal Balls" className="absolute top-72 rounded-xl drop-shadow-xl" style={{width: "280px", right: "30rem"}}/>
+                  <a href="https://www.nytimes.com/interactive/2022/12/13/climate/climate-footprint-map-neighborhood.html?smid=nytcore-ios-share&referringSource=articleShare" target="_blank">
+                      <Flip right>
+                      <img src={ClimateMap} alt="Coal Balls" className="absolute top-20 right-40 rounded-xl drop-shadow-xl" style={{width: "280px"}}/>
+                      </Flip>
+                  </a>
+                  <a href="https://www.nytimes.com/interactive/2018/03/27/upshot/make-your-own-mobility-animation.html" target="_blank">
+                      <Flip right>
+                      <img src={IncomeMobility} alt="Coal Balls" className="absolute top-72 right-4 rounded-xl drop-shadow-xl" style={{width: "280px"}}/>
+                      </Flip>
+                  </a>
+                  <a href="https://ncase.me/polygons/" target="_blank">
+                      <Flip right>
+                      <img src={PolygonParable} alt="Coal Balls" className="absolute top-72 rounded-xl drop-shadow-xl" style={{width: "280px", right: "30rem"}}/>
+                      </Flip>
+                  </a>
               </Flip>
           </div>
         </Fade>

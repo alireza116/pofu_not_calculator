@@ -41,16 +41,48 @@ function ClimateChatbot(){
                     </p>
                     <div className="relative" style={{height: "800px"}}>
                         <Flip left>
-                            <img src={AngryUncle} alt="Coal Balls" className="absolute top-0 left-96 rounded-xl drop-shadow-xl" style={{width: "280px"}}/>
-                            <img src={Examples} alt="Coal Balls" className="absolute top-8 left-4 rounded-xl drop-shadow-xl" style={{width: "280px"}}/>
-                            <img src={CaseStudies} alt="Coal Balls" className="absolute top-52 left-72 rounded-xl drop-shadow-xl" style={{width: "280px"}}/>
-                            <img src={Duolingo} alt="Coal Balls" className="absolute top-96 left-12 rounded-xl drop-shadow-xl" style={{width: "280px"}}/>
+                            <a href="https://www.nytimes.com/interactive/2019/11/26/opinion/family-holiday-talk-impeachment.html" target="_blank">
+                                <Flip left>
+                                    <img src={AngryUncle} alt="Coal Balls" className="absolute top-0 left-96 rounded-xl drop-shadow-xl" style={{width: "280px"}}/>
+                                </Flip>
+                            </a>
+                            <a href="https://www.tidio.com/blog/chatbot-examples/" target="_blank">
+                                <Flip left>
+                                <img src={Examples} alt="Coal Balls" className="absolute top-8 left-4 rounded-xl drop-shadow-xl" style={{width: "280px"}}/>
+                                </Flip>
+                            </a>
+                            <a href="https://research.aimultiple.com/top-chatbot-success/" target="_blank">
+                                <Flip left>
+                                <img src={CaseStudies} alt="Coal Balls" className="absolute top-52 left-72 rounded-xl drop-shadow-xl" style={{width: "280px"}}/>
+                                </Flip>
+                            </a>
+                            <a href="https://d3.harvard.edu/platform-digit/submission/duolingo-learning-the-language-of-ai/" target="_blank">
+                                <Flip left>
+                                <img src={Duolingo} alt="Coal Balls" className="absolute top-96 left-12 rounded-xl drop-shadow-xl" style={{width: "280px"}}/>
+                                </Flip>
+                            </a>
                          </Flip>
                          <Flip right>
-                            <img src={AIChatbots} alt="Coal Balls" className="absolute top-0 right-96 rounded-xl drop-shadow-xl" style={{width: "280px"}}/>
-                            <img src={Einstein} alt="Coal Balls" className="absolute top-20 right-40 rounded-xl drop-shadow-xl" style={{width: "280px"}}/>
-                            <img src={Roo} alt="Coal Balls" className="absolute top-72 right-4 rounded-xl drop-shadow-xl" style={{width: "280px"}}/>
-                            <img src={ChatGpt} alt="Coal Balls" className="absolute top-64 rounded-xl drop-shadow-xl" style={{width: "280px", right: "30rem"}}/>
+                            <a href="https://blog.hubspot.com/marketing/best-ai-chatbot" target="_blank">
+                                <Flip left>
+                                <img src={AIChatbots} alt="Coal Balls" className="absolute top-0 right-96 rounded-xl drop-shadow-xl" style={{width: "280px"}}/>
+                                </Flip>
+                            </a>
+                            <a href="https://einstein.digitalhumans.com/" target="_blank">
+                                <Flip left>
+                                <img src={Einstein} alt="Coal Balls" className="absolute top-20 right-40 rounded-xl drop-shadow-xl" style={{width: "280px"}}/>
+                                </Flip>
+                            </a>
+                            <a href="https://roo.plannedparenthood.org/chat" target="_blank">
+                                <Flip left>
+                                <img src={Roo} alt="Coal Balls" className="absolute top-72 right-4 rounded-xl drop-shadow-xl" style={{width: "280px"}}/>
+                                </Flip>
+                            </a>
+                            <a href="https://openai.com/blog/chatgpt/%5C/" target="_blank">
+                                <Flip left>
+                                <img src={ChatGpt} alt="Coal Balls" className="absolute top-64 rounded-xl drop-shadow-xl" style={{width: "280px", right: "30rem"}}/>
+                                </Flip>
+                            </a>
                         </Flip>
                     </div>
                 </Fade>
