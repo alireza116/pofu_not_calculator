@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState, Suspense, useRef } from 'react';
 import IdeoLogo from '../assets/ideo-logo.svg';
 import { ArrowLeft, Tag, Circle, DownloadSimple } from 'phosphor-react';
@@ -6,6 +7,7 @@ import Fade from 'react-reveal/Fade';
 import IconArrayByCount from '../components/IconArrayByCount';
 import FlightCo2e from '../components/flightco2e';
 import html2canvas from 'html2canvas';
+
 
 function LabelMaker() {
   // const contentRef = useRef(null)
@@ -18,10 +20,11 @@ function LabelMaker() {
   const [physicalLabelHeight, setPhysicalLabelHeight]= useState(0);
 
   const [flightDistance, setFlightDistance] = useState(0);
-  const [distanceUnit, setDistanceUnit] = useState('km');
+  const [distanceUnit, setDistanceUnit] = useState("km");
   const [co2e, setCo2e] = useState(0);
   const [co2eUnit, setCo2eUnit] = useState('lb');
   const [visualUnit, setVisualUnit] = useState('oil');
+
 
   const ref = useRef(null)
 
@@ -65,6 +68,7 @@ function LabelMaker() {
   const fillColor = {
     oil: 'bg-amber-50',
     trees: 'bg-lime-50',
+
   };
 
   const getDescription = () => {
@@ -95,8 +99,9 @@ function LabelMaker() {
         return ``;
       case 'trees':
         return `~ for ten years ~`;
+
       default:
-        return '';
+        return "";
     }
   };
 
@@ -131,12 +136,14 @@ function LabelMaker() {
             &nbsp;Back
           </Link>
 
+
           <h1 className="text-left font-['Arima'] text-2xl leading-snug mt-16 text-stone-500 italic">Make Your Carbon Labels for ...</h1>
           <div className="flex items-center">
             {/* <AirplaneTilt size={42} className="text-stone-400"/> */}
             <h1 className="text-left font-['Arima'] text-6xl leading-normal text-gray-200 italic">What if I flew there?</h1>
           </div>
           
+
           <FlightCo2e state={flightCalcState} />
           {/* <div>
             <label htmlFor='count' className='text-left block text-lg font-medium text-gray-200 '>
@@ -175,6 +182,7 @@ function LabelMaker() {
             </div>
           </div> */}
         </div>
+
         <div className='flex-1 overflow-y-scroll p-12'>
           <div className="flex pr-4">
             <Tag size={24} />
@@ -232,12 +240,14 @@ function LabelMaker() {
                 </div>
               </div>
             </div>
+
             <IconArrayByCount
               count={countIcon}
               iconSize={iconSize}
               icon={iconPath[visualUnit]}
               pct={pct}
               showHighlightFirst={false}
+
               primaryColor='#202020'
               secondaryColor='#fafafa'>
             </IconArrayByCount>
@@ -248,6 +258,7 @@ function LabelMaker() {
               <div className="mx-5 font-['Arima']">POFU : NOT A CACULATOR <span className="font-bold">@ IDEO 2023</span></div>
               <Circle size={32} weight="fill" color="#ffffff"/>
             </div>
+
 
           </div>
         </div>
