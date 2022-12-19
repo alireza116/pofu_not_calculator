@@ -138,7 +138,7 @@ function CarbonLabeling() {
         <Fade bottom>
           <div className="px-10">
             <p className="text-left font-['Arima'] font-bold text-2xl leading-relaxed mt-10 mb-10 w-1/2">
-              ROVOCATION #2
+              PROVOCATION #2
             </p>
             <p className="text-left font-['Arima'] text-6xl leading-normal mb-20">
               A carbon price tag that a seller must purchase as a "ticket" to

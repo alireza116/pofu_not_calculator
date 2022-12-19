@@ -21,7 +21,7 @@ function ExploratoryExplanation() {
 
   return (
     <>
-      <main className="h-[1300px] m-36">
+      <main className="h-[1450px] m-36">
         <BackButton />
         <Fade bottom>
           <p className="text-left font-['Arima'] text-8xl leading-snug mt-10">
@@ -34,9 +34,10 @@ function ExploratoryExplanation() {
             are used by journalists to create narratives that are data driven,
             engaging, and persuasive!
           </p>
+          <br></br>
           <p className="text-left font-['Arima'] text-2xl leading-relaxed mt-2 mb-20 w-1/2">
             {" "}
-            <span className="font-semibold">"Explorable explanation'</span>
+            <span className="font-semibold italic ">Explorable explanation </span>
             is the phrase used to describe interactive, narrative visualizations
             that enable humans to learn from data in a playful, engaging manner.
             How might we create such explorables to communicate important
@@ -215,7 +216,7 @@ function ExploratoryExplanation() {
             </Link>
             <Link
               className="mx-5 text-left font-['Arima'] flex mx-0 text-2xl justify-self-end"
-              to="/interactive-data-vis"
+              to="/data-visualization"
             >
               Powerful Data Visualization &nbsp;
               <ArrowRight size={28} className="px-0" />

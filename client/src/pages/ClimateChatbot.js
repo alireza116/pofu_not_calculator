@@ -117,7 +117,7 @@ function ClimateChatbot(){
                     </div>      
                 </Fade>
             </div>
-            <div className="px-36 pt-10 pb-36 h-[1600px]">
+            <div className="px-36 pt-10 pb-36 h-[1900px]">
                 <Fade bottom>
                     <p className= "text-left font-['Arima'] font-bold text-2xl leading-relaxed mt-10 mb-20 w-1/2">
                         WHAT TO CONSIDER
@@ -164,12 +164,23 @@ function ClimateChatbot(){
                             <h1>Does it provide guidelines and <span className="font-bold">advice around behavior change</span> to reduce our carbon footprint?</h1>
                         </div>
                     </div>
+                    <div className= "flex mb-20">
+                        <div className= "absolute text-left font-['Arima'] text-3xl leading-relaxed p-10 m-5 bg-emerald-200 aspect-square w-72 left-0 rotate-2" style={{top: "65rem"}}>
+                            <h1 className="font-bold">Use Cases of a Chatbot</h1>
+                        </div>
+                        <div className= "absolute text-left font-['Arima'] text-2xl leading-relaxed p-10 m-5 bg-emerald-100 aspect-square w-80 right-96 rotate-6" style={{top: "68rem"}}>
+                            <h1>Where would you interact with this chatbot? Slack? Mobile? Web?</h1>
+                        </div>
+                        <div className= "absolute text-left font-['Arima'] text-2xl leading-relaxed p-10 m-5 bg-emerald-100 aspect-square w-80 left-80 -rotate-2" style={{top: "65rem"}}>
+                            <h1>Is this a chatbot for individual and/or private use or professional and/or industry use?</h1>
+                        </div>
+                    </div>
                 </Fade>
             </div>
             <div className="px-36 pt-10 pb-36 h-[60px]">
                 <Fade bottom>
                     <div className="grid grid-cols-3">
-                        <Link className="mx-5 text-left font-['Arima'] flex mx-0 text-2xl justify-self-start" to="/interactive-data-vis">
+                        <Link className="mx-5 text-left font-['Arima'] flex mx-0 text-2xl justify-self-start" to="/data-visualization">
                             <ArrowLeft size={28} className="px-0"/>&nbsp;Interactive Data Visualization
                         </Link>
                         <Link className="justify-self-center" to="/home">

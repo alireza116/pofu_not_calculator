@@ -18,7 +18,7 @@ function Home() {
                 <source src={GradientBg} type="video/mp4" />
             </video> 
             <main className = "h-screen m-36 opening-section">
-                <img src={IdeoLogo} alt="Ideo Logo" className="z-10"/> 
+                {/* <img src={IdeoLogo} alt="Ideo Logo" className="z-10"/>  */}
                 <Fade bottom>
                     <p className= "text-left font-['Arima'] text-7xl leading-snug mt-10 z-1">
                         HMW <span className="text-orange-600 ">make sense of the climate </span> 

@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home.js";
 import CarbonLabeling from "./pages/CarbonLabeling";
 import ClimateChatbot from "./pages/ClimateChatbot";
-import InteractiveDataVis from "./pages/InteractiveDataVis.js";
+import PowerfulDataVis from "./pages/PowerfulDataVis.js";
 import ExploratoryExplanation from "./pages/ExploratoryExplanation";
 import PersuasiveGames from "./pages/PersuasiveGames.js";
 import LabelMaker from "./pages/LabelMaker.js";
@@ -39,8 +39,8 @@ function App() {
           <Route path="/carbon-labeling" element={<CarbonLabeling />} />
           <Route path="/climate-chatbot" element={<ClimateChatbot />} />
           <Route
-            path="/interactive-data-vis"
-            element={<InteractiveDataVis />}
+            path="/data-visualization"
+            element={<PowerfulDataVis />}
           />
           <Route
             path="/exploratory-explanation"

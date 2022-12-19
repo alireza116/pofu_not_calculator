@@ -39,7 +39,7 @@ function Menu() {
         </h1>
         <h1 className="text-left font-['Arima'] text-6xl leading-relaxed my-4 flex items-center hover:text-violet-200 duration-300">
           <Polygon size={80} />
-          <Link className="mx-5" to="/interactive-data-vis">
+          <Link className="mx-5" to="/data-visualization">
             &nbsp;Powerful Data Visualization
           </Link>
         </h1>
