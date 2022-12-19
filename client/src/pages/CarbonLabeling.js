@@ -42,8 +42,16 @@ function CarbonLabeling(){
                     </p>
                     <div className="relative" style={{height: "1200px"}}>
                         <Flip left>
-                            <img src={CleverCarbon} alt="Coal Balls" className="absolute top-0 rounded-xl drop-shadow-xl" style={{width: "280px", left: "22rem"}}/>
-                            <img src={CoffeeMenu} alt="Coal Balls" className="absolute top-12 left-0 rounded-xl drop-shadow-xl" style={{width: "280px"}}/>
+                            <a href="https://clevercarbon.io/carbon-footprint-of-common-items/" target="_blank">
+                                <Flip left>
+                                    <img src={CleverCarbon} alt="Coal Balls" className="absolute top-0 rounded-xl drop-shadow-xl" style={{width: "280px", left: "22rem"}}/>
+                                </Flip>
+                            </a>
+                            <a href="https://clevercarbon.io/thecoffeemenu/" target="_blank">
+                                <Flip left>
+                                <img src={CoffeeMenu} alt="Coal Balls" className="absolute top-12 left-0 rounded-xl drop-shadow-xl" style={{width: "280px"}}/>
+                                </Flip>
+                            </a>
                             <img src={Acme} alt="Coal Balls" className="absolute top-8 rounded-xl drop-shadow-xl" style={{width: "280px", right: "26rem" }}/>
                             <div className="rotate-12">
                                  <img src={Pantys} alt="Coal Balls" className="absolute top-96 left-52 rounded-xl drop-shadow-xl rotate-12" style={{width: "280px"}}/>

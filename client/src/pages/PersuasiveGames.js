@@ -38,21 +38,46 @@ function PersuasiveGame(){
                     </p>
                     <div className="relative" style={{height: "800px"}}>
                         <Flip left>
-                            <video width="400" autoPlay={true} loop={true} muted className="absolute top-96 left-0">
-                                <source src={WhereWaldo} type="video/mp4" />
-                            </video>
-                            <video width="600" autoPlay={true} loop={true} muted className="absolute top-0 left-10">
+                            <a href="https://www.nytimes.com/guides/year-of-living-better/how-to-reduce-your-carbon-footprint" target="_blank">
+                                <Flip left>
+                                <video width="400" autoPlay={true} loop={true} muted className="absolute top-96 left-0">
+                                    <source src={WhereWaldo} type="video/mp4" />
+                                </video>
+                                </Flip>
+                            </a>
+                            <a href="https://www.everydayexperiments.com/extreme-measures" target="_blank">
+                                <Flip left>
+                                <video width="600" autoPlay={true} loop={true} muted className="absolute top-0 left-10">
                                 <source src={ElephantInRoom} type="video/mp4" />
-                            </video>
-                            <img src={CoalBall} alt="Coal Balls" className="absolute top-72 left-80" style={{width: "480px"}}/>
+                                </video>
+                                </Flip>
+                            </a>
+                            {/* <a href="https://field.blue/work/ikea-space10-everyday-experiments" target="_blank">
+                                <Flip left>
+                                <video width="600" autoPlay={true} loop={true} muted className="absolute top-0 left-10">
+                                <source src={ElephantInRoom} type="video/mp4" />
+                                </video>
+                                </Flip>
+                            </a> */}
+                            <Flip left>
+                                <img src={CoalBall} alt="Coal Balls" className="absolute top-72 left-80" style={{width: "480px"}}/>
+                            </Flip>
                          </Flip>
                          <Flip right>
-                            <video width="600" autoPlay={true} loop={true} muted className="absolute top-20 right-36">
+                            <a href="https://www.everydayexperiments.com/spatial-instruments" target="_blank">
+                                <Flip left>
+                                <video width="600" autoPlay={true} loop={true} muted className="absolute top-20 right-36">
                                 <source src={MusicRoom} type="video/mp4" />
-                            </video>
-                            <video width="400" autoPlay={true} loop={true} muted className="absolute top-96 right-10">
+                                </video>
+                                </Flip>
+                            </a>
+                            <a href="https://www.everydayexperiments.com/sound-bubbles" target="_blank">
+                                <Flip left>
+                                <video width="400" autoPlay={true} loop={true} muted className="absolute top-96 right-10">
                                 <source src={ParticleFields} type="video/mp4" />
-                            </video>
+                                </video>
+                                </Flip>
+                            </a>
                         </Flip>
                     </div>
                 </Fade>

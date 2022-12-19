@@ -26,7 +26,7 @@ function Home() {
                         <span className="text-indigo-600 "> in intuitive & effective ways</span>?
                     </p>
                 </Fade>
-                <div className="absolute bottom-10 hover:text-white hover:cursor-pointer duration-300">
+                <div className="absolute bottom-10 hover:cursor-pointer duration-300">
                     <ArrowDown size={60} onClick={scrollToMenu} />
                 </div>
             </main> 

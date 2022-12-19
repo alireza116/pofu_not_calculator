@@ -3,6 +3,7 @@ import IdeoLogo from '../assets/ideo-logo.svg'
 import { ArrowRight, ArrowLeft, HouseSimple } from "phosphor-react";
 import { Link } from "react-router-dom";
 import Fade from 'react-reveal/Fade';
+import Flip from 'react-reveal/Flip';
 
 import BackButton from '../components/BackButton.js'
 
@@ -41,17 +42,45 @@ function InteractiveDataVis(){
                         INSPIRATIONAL & SECONDARY RESEARCH 
                     </p>
                     <div className="relative" style={{height: "800px"}}>
-                        <Fade left>
-                            <img src={Pictograms} alt="Coal Balls" className="absolute top-0 left-96 rounded-xl drop-shadow-xl" style={{width: "280px"}}/>
-                            <img src={Blast} alt="Coal Balls" className="absolute top-12 left-10 rounded-xl drop-shadow-xl" style={{width: "280px"}}/>
-                            <img src={Wrap} alt="Coal Balls" className="absolute top-0 right-96 rounded-xl drop-shadow-xl" style={{width: "280px"}}/>
-                            <img src={IdealPrac} alt="Coal Balls" className="absolute top-52 left-72 rounded-xl drop-shadow-xl" style={{width: "280px"}}/>
-                         </Fade>
-                         <Fade right>
-                            <img src={Isotype} alt="Coal Balls" className="absolute top-20 right-40 rounded-xl drop-shadow-xl" style={{width: "280px"}}/>
-                            <img src={NYTClimate} alt="Coal Balls" className="absolute top-72 right-4 rounded-xl drop-shadow-xl" style={{width: "280px"}}/>
-                            <img src={Equivalent} alt="Coal Balls" className="absolute top-72 rounded-xl drop-shadow-xl" style={{width: "280px", right: "30rem"}}/>
-                        </Fade>
+                        <Flip left>
+                            <a href="https://flourish.studio/blog/pictogram-isotype/" target="_blank">
+                                <Flip left>
+                                    <img src={Pictograms} alt="Coal Balls" className="absolute top-0 left-96 rounded-xl drop-shadow-xl" style={{width: "280px"}}/>
+                                </Flip>
+                            </a>
+                            <a href="https://www.reuters.com/graphics/LEBANON-SECURITY/BLAST/yzdpxnmqbpx/" target="_blank">
+                                <Flip left>
+                                    <img src={Blast} alt="Coal Balls" className="absolute top-12 left-10 rounded-xl drop-shadow-xl" style={{width: "280px"}}/>
+                                </Flip>
+                            </a>
+                            <a href="https://medium.com/multiple-views-visualization-research-explained/visualizing-categorical-data-with-disproportionate-values-using-du-bois-wrapped-bar-charts-7dd9e4901fa6" target="_blank">
+                                <Flip left>
+                                    <img src={Wrap} alt="Coal Balls" className="absolute top-0 right-96 rounded-xl drop-shadow-xl" style={{width: "280px"}}/>
+                                </Flip>
+                            </a>
+                            <a href="http://www.thefunctionalart.com/2022/11/idealism-and-pragmatism-in-visualization.html" target="_blank">
+                                <Flip left>
+                                    <img src={IdealPrac} alt="Coal Balls" className="absolute top-52 left-72 rounded-xl drop-shadow-xl" style={{width: "280px"}}/>
+                                </Flip>
+                            </a>
+                         </Flip>
+                         <Flip right>
+                            <a href="http://steveharoz.com/research/isotype/" target="_blank">
+                                <Flip left>
+                                    <img src={Isotype} alt="Coal Balls" className="absolute top-20 right-40 rounded-xl drop-shadow-xl" style={{width: "280px"}}/>
+                                </Flip>
+                            </a>
+                            <a href="https://www.nytimes.com/2019/02/28/learning/teach-about-climate-change-with-these-24-new-york-times-graphs.html" target="_blank">
+                                <Flip left>
+                                    <img src={NYTClimate} alt="Coal Balls" className="absolute top-72 right-4 rounded-xl drop-shadow-xl" style={{width: "280px"}}/>
+                                </Flip>
+                            </a>
+                            <a href="https://www.epa.gov/energy/greenhouse-gas-equivalencies-calculator?unit=therms&amount=5#results" target="_blank">
+                                <Flip left>
+                                    <img src={Equivalent} alt="Coal Balls" className="absolute top-72 rounded-xl drop-shadow-xl" style={{width: "280px", right: "30rem"}}/>
+                                </Flip>
+                            </a>
+                        </Flip>
                     </div>
                 </Fade>
             </main> 
