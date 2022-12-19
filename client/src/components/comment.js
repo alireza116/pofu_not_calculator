@@ -7,7 +7,7 @@ import {
 
 function Comment(){
     return(
-        <div className="relative flex flex-col mx-36 mb-24 px-28 py-14 bg-amber-100 rounded-3xl comment-box" > 
+        <div className="relative flex flex-col mx-36 mb-24 px-28 py-14 bg-stone-200 rounded-3xl comment-box" > 
             <Fade bottom>
                 {/* <img src={Flowers} alt="Coal Balls" className="absolute top-0 left-12 rounded-xl"/> */}
                 <p className= "text-left font-['Arima'] text-7xl leading-snug mt-10 z-1">

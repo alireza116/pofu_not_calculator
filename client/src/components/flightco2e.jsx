@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Ruler, HandEye } from "phosphor-react";
 
 function FlightCo2e({ state }) {
   const {
@@ -47,48 +46,33 @@ function FlightCo2e({ state }) {
   }, [flightDistance, distanceUnit, visualUnit]);
 
   return (
-    <div className='flex flex-wrap'>
-      <div className="mx-0 px-0 mt-20 text-left">
-        <div className="mx-0 px-0">
-          <div className='flex'>
-            <Ruler size={42} className="text-stone-400"/>
-            <label for='flightDistance' className="text-left font-['Arima'] text-3xl leading-snug text-gray-200 mx-3">
-               Well, how far are you flying?
-            </label>
-          </div>
-        </div>
-        <div className="flex">
-          <input
-            className="appearance-none bg-transparent border-b border-gray-200 font-['Arima'] text-3xl text-gray-200 w-1/3 mr-3 px-2 h-auto leading-tight focus:outline-none pt-10"
-            type='number'
-            name='flightDistance'
-            onChange={(event) => {
-              setFlightDistance(parseInt(event.target.value));
-            }}
-          />
-          <select
-            className="block appearance-none w-1/4 bg-transparent border-b border-gray-200 hover:border-gray-200 px-4 pt-10 leading-tight focus:outline-none focus:shadow-outline font-['Arima'] text-3xl text-gray-200"
-            name='unit'
-            id='distance-unit-select'
-            onChange={(event) => {
-              setDistanceUnit(event.target.value);
-            }}>
-            <option value='km'>Km</option>
-            <option value='miles'>Miles</option>
-          </select>
-          <h1 className="pt-12 font-['Arima'] text-4xl text-gray-200">.</h1>
-        </div>
-      </div>
-
-      <div className='w-full flex flex-wrap mt-28'>
-        <div className='flex'>
-          <HandEye size={42} className="text-stone-400"/>
-          <label for='flightDistance' className="text-left font-['Arima'] text-3xl leading-snug text-gray-200 mx-3">
-               How would you like to visualize it?
-            </label>
-        </div>
+    <div className='pt-10 flex flex-wrap'>
+      <label for='flightDistance' className="text-left font-['Arima'] text-4xl leading-snug text-gray-200">
+        Well, how far are you flying?
+      </label>
+      <input
+        className="appearance-none bg-transparent border-b border-gray-200 font-['Arima'] text-4xl text-gray-200 w-1/3 mr-3 py-1 px-2 leading-tight focus:outline-none"
+        type='number'
+        name='flightDistance'
+        onChange={(event) => {
+          setFlightDistance(parseInt(event.target.value));
+        }}
+      />
+      <select
+        className="block appearance-none  w-1/4 bg-transparent border-b border-gray-200 hover:border-gray-200 px-4 py-2 pr-8 leading-tight focus:outline-none focus:shadow-outline font-['Arima'] text-4xl text-gray-200"
+        name='unit'
+        id='distance-unit-select'
+        onChange={(event) => {
+          setDistanceUnit(event.target.value);
+        }}>
+        <option value='km'>Km</option>
+        <option value='miles'>Miles</option>
+      </select>
+      <h1 className="pt-12 font-['Arima'] text-4xl text-gray-200">.</h1>
+      <div className='w-full flex flex-wrap'>
+        <h1 className="text-left pt-12 font-['Arima'] text-4xl text-gray-200">How would you like to visual it?</h1>
         <select
-          className="block w-3/5 appearance-none bg-transparent border-b border-gray-200 hover:border-gray-200 pt-10 pr-8 leading-tight focus:outline-none focus:shadow-outline font-['Arima'] text-3xl text-gray-200"
+          className="block w-3/5 appearance-none bg-transparent border-b border-gray-200 hover:border-gray-200 pt-10 pr-8 leading-tight focus:outline-none focus:shadow-outline font-['Arima'] text-4xl text-gray-200"
           name='unit'
           id='distance-unit-select'
           onChange={(event) => {
