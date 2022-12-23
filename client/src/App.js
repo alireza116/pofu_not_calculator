@@ -14,7 +14,6 @@ import PersuasiveGames from "./pages/PersuasiveGames.js";
 import LabelMaker from "./pages/LabelMaker.js";
 import ScrollToTop from "./components/ScrollToTop.js";
 
-
 function App() {
   const getData = async () => {
     const { data } = await axios.get(`/getThings`);
@@ -38,10 +37,7 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/carbon-labeling" element={<CarbonLabeling />} />
           <Route path="/climate-chatbot" element={<ClimateChatbot />} />
-          <Route
-            path="/data-visualization"
-            element={<PowerfulDataVis />}
-          />
+          <Route path="/data-visualization" element={<PowerfulDataVis />} />
           <Route
             path="/exploratory-explanation"
             element={<ExploratoryExplanation />}
@@ -94,7 +90,6 @@ function App() {
           ></IconArrayByCount>
         </div> */}
       {/* </div> */}
-
     </div>
   );
 }
