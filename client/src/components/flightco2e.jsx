@@ -146,7 +146,7 @@ function FlightCo2e({ state }) {
               return distance;
             }}
             type="button"
-            className="inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+            className="mb-8 mt-8 inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
           >
             Calculate Distance
           </button>
@@ -158,7 +158,7 @@ function FlightCo2e({ state }) {
               for="startCity"
               className="text-left font-['Arima'] text-3xl leading-snug text-gray-200 mx-3"
             >
-              Well, how far are you flying?
+              A flight from {startCity} to {endCity} is:
             </label>
           </div>
         </div>
