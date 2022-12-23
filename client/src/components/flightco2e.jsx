@@ -167,6 +167,7 @@ function FlightCo2e({ state }) {
             className="appearance-none bg-transparent border-b border-gray-200 font-['Arima'] text-3xl text-gray-200 w-1/3 mr-3 px-2 h-auto leading-tight focus:outline-none pt-10"
             type="number"
             name="flightDistance"
+            value={flightDistance}
             onChange={(event) => {
               setFlightDistance(parseInt(event.target.value));
             }}
