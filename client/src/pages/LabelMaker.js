@@ -21,7 +21,7 @@ function LabelMaker() {
   const [distanceUnit, setDistanceUnit] = useState("km");
   const [co2e, setCo2e] = useState(0);
   const [co2eUnit, setCo2eUnit] = useState("lb");
-  const [visualUnit, setVisualUnit] = useState("oil");
+  const [visualUnit, setVisualUnit] = useState("trees");
 
   const ref = useRef(null);
 
@@ -228,7 +228,7 @@ function LabelMaker() {
                     Flying
                     <div className="mt-2">
                       <span className="font-bold text-5xl">
-                        {flightDistance}
+                        {flightDistance.toFixed(2)}
                       </span>{" "}
                       {distanceUnit}
                     </div>
